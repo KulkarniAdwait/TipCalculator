@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Tip Calculator</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="default_Amount">0.00</string>
+    <string name="dollar">$</string>
+    <string name="lbl_Amount">Amount:</string>
+    <string name="lbl_Tip">Tip:</string>
+    <string name="lbl_10">10%</string>
+    <string name="lbl_15">15%</string>
+    <string name="lbl_20">20%</string>
+    <string name="lbl_total">Total:</string>
+    <string name="default_User_Amount">25</string>
+    <string name="lbl_rd_percent">%</string>
+    <string name="lbl_rd_amount">$</string>
+
+</resources>

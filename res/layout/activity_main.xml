@@ -1,0 +1,201 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}" >
+
+	<TextView
+        android:id="@+id/tvAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentTop="true"
+        android:text="@string/lbl_Amount"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+	
+	<TextView
+        android:id="@+id/tvDollarSign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvAmount"
+        android:layout_alignLeft="@+id/tvAmount"
+        android:text="@string/dollar"
+        android:textSize="25sp" />
+        
+    <EditText
+        android:id="@+id/etAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvDollarSign"
+        android:layout_toRightOf="@+id/tvDollarSign"
+        android:ems="10"
+        android:hint="@string/default_Amount"
+        android:inputType="numberDecimal" >
+
+        <requestFocus />
+    </EditText>
+    
+    <TextView
+        android:id="@+id/lbl_Tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvDollarSign"
+        android:layout_below="@+id/etAmount"
+        android:layout_marginTop="22dp"
+        android:text="@string/lbl_Tip"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/lbl_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lbl_Tip"
+        android:layout_alignBottom="@+id/lbl_Tip"
+        android:layout_toRightOf="@+id/etAmount"
+        android:text="@string/lbl_total" />
+    
+    
+
+	<TextView
+        android:id="@+id/lbl_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lbl_Tip"
+        android:layout_below="@+id/lbl_Tip"
+        android:text="@string/lbl_10"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/lbl_15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lbl_10"
+        android:layout_below="@+id/lbl_10"
+        android:text="@string/lbl_15"
+        android:textSize="25sp" />
+    
+	<TextView
+        android:id="@+id/lbl_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lbl_10"
+        android:layout_below="@+id/lbl_15"
+        android:text="@string/lbl_20"
+        android:textSize="25sp" />
+	
+	<TextView
+        android:id="@+id/lbl_10_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lbl_10"
+        android:layout_marginLeft="23dp"
+        android:layout_toRightOf="@+id/lbl_10"
+        android:text="@string/default_Amount"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/lbl_15_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lbl_15"
+        android:layout_alignLeft="@+id/lbl_10_amount"
+        android:text="@string/default_Amount"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="20sp" />
+
+	<TextView
+        android:id="@+id/lbl_20_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lbl_20"
+        android:layout_alignLeft="@+id/lbl_15_amount"
+        android:text="@string/default_Amount"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="20sp" /> 
+        
+	<TextView
+        android:id="@+id/tv10Total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/lbl_total"
+        android:layout_alignBottom="@+id/lbl_10"
+        android:text="@string/default_Amount"
+        android:textSize="20sp" />
+	
+	<TextView
+        android:id="@+id/tv15Total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/lbl_total"
+        android:layout_alignBottom="@+id/lbl_15"
+        android:text="@string/default_Amount"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv20Total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/lbl_total"
+        android:layout_alignBottom="@+id/lbl_20"
+        android:text="@string/default_Amount"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/etUserNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvDollarSign"
+        android:layout_alignRight="@+id/tvAmount"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:inputType="numberDecimal"
+        android:text="@string/default_User_Amount"
+        android:textSize="25sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/etUserNumber"
+        android:layout_alignBottom="@+id/etUserNumber"
+        android:layout_toRightOf="@+id/etUserNumber"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <RadioButton
+            android:id="@+id/rd_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/lbl_rd_percent" />
+
+        <RadioButton
+            android:id="@+id/rd_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_rd_amount" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/lbl_User_Amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lbl_20_amount"
+        android:layout_below="@+id/etUserNumber"
+        android:text="@string/default_Amount"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="20sp" />
+    
+    <TextView
+        android:id="@+id/tvUserTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lbl_User_Amount"
+        android:layout_alignRight="@+id/lbl_total"
+        android:text="@string/default_Amount"
+        android:textSize="20sp" />
+
+</RelativeLayout>
