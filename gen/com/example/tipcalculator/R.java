@@ -25,9 +25,9 @@ public final class R {
         public static final int lbl_Tip=0x7f060003;
         public static final int lbl_User_Amount=0x7f060012;
         public static final int lbl_total=0x7f060004;
-        public static final int radioGroup1=0x7f06000f;
         public static final int rd_amount=0x7f060011;
         public static final int rd_percent=0x7f060010;
+        public static final int rgTipMethod=0x7f06000f;
         public static final int tv10Total=0x7f06000b;
         public static final int tv15Total=0x7f06000c;
         public static final int tv20Total=0x7f06000d;

@@ -151,19 +151,19 @@
         android:layout_centerVertical="true"
         android:ems="10"
         android:gravity="center_vertical"
-        android:inputType="numberDecimal"
-        android:text="@string/default_User_Amount"
-        android:textSize="25sp" />
+        android:hint="@string/default_User_Amount"
+        android:inputType="number"
+        android:textSize="15sp" />
 
     <RadioGroup
-        android:id="@+id/radioGroup1"
+        android:id="@+id/rgTipMethod"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/etUserNumber"
         android:layout_alignBottom="@+id/etUserNumber"
+        android:layout_alignTop="@+id/etUserNumber"
         android:layout_toRightOf="@+id/etUserNumber"
-        android:orientation="horizontal"
-        android:gravity="center_vertical">
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
 
         <RadioButton
             android:id="@+id/rd_percent"
