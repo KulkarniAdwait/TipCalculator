@@ -7,7 +7,7 @@ Optional stories
 * (Optional) User can select custom tip percentage if desired
 * (Optional) Experiment with trying input widgets to replace the buttons and/or textviews
   
-* User can also enter the tip amount in $ and see it reflect as a tip %. Useful when you want to tip cash which has fixed denominations.
+* User can also enter the tip amount in $ and see it reflect as a tip %. Useful when you want to tip cash, which has fixed denominations(5, 10, 20...).
   
 
 ![Video Walkthrough](tip calculator.gif)
