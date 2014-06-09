@@ -10,3 +10,4 @@ Optional stories
   User can also enter the tip amount in $ and see it reflect as a tip %. Useful when you want to tip cash which has fixed denominations.
   
 
+![Video Walkthrough](tip calculator.gif)
